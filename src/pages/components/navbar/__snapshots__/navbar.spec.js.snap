@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar should render as expected 1`] = `
+<DocumentFragment>
+  <div
+    class="navbar"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="logo"
+        height="40px"
+        src="logo.svg"
+      />
+    </a>
+  </div>
+</DocumentFragment>
+`;

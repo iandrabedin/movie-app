@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details should render as expected 1`] = `
+<DocumentFragment>
+  <div
+    class="details-content"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="poster col-sm-12 col-lg-6"
+      >
+        <img
+          alt="Title"
+          src="https://image.tmdb.org/t/p/w342poster_path"
+        />
+      </div>
+      <div
+        class="col-sm-12 col-lg-6"
+      >
+        <h1
+          class="title"
+        >
+          Title
+        </h1>
+        <p
+          class="subtitle"
+        >
+          January 1, 2020
+        </p>
+        <div
+          class="row"
+        >
+          <div
+            class="pills"
+          >
+            Drama
+          </div>
+        </div>
+        <h3
+          class="section-title"
+        >
+          Overview
+        </h3>
+        <p
+          class="overview"
+        />
+        <h3
+          class="section-title"
+        >
+          Cast and Crew
+        </h3>
+        <div
+          class="row"
+        >
+          <div
+            class="col-sm-12 col-lg-3"
+          >
+            <div
+              class="profile"
+            >
+              <div
+                class="profile-image"
+              >
+                <img
+                  alt="name"
+                  src="https://image.tmdb.org/t/p/w185undefined"
+                />
+              </div>
+              <div
+                class="profile-title"
+              >
+                name
+              </div>
+              <div
+                class="profile-subtitle"
+              >
+                character
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="col-sm-12 col-lg-3"
+          >
+            <div
+              class="profile"
+            >
+              <div
+                class="profile-image"
+              >
+                <img
+                  alt="name"
+                  src="https://image.tmdb.org/t/p/w185undefined"
+                />
+              </div>
+              <div
+                class="profile-title"
+              >
+                name
+              </div>
+              <div
+                class="profile-subtitle"
+              >
+                job
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

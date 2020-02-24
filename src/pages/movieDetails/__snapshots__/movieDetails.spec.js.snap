@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieDetails should render as expected 1`] = `
+<DocumentFragment>
+  <div
+    class="loader"
+  >
+    Loading...
+  </div>
+</DocumentFragment>
+`;

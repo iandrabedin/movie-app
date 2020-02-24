@@ -1,0 +1,74 @@
+@import '../../../styles/variables.scss';
+
+.card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 24px 24px 0;
+  display: flex;
+  display: -ms-flexbox;
+
+  .image {
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .info {
+    height: 100%;
+    margin: 16px;
+
+    .rating {
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      background-color: $color-primary;
+      color: $color-white;
+      font-weight: $text-semibold;
+      display: flex;
+      display: -ms-flexbox;
+      justify-content: center;
+      -ms-flex-pack: center;
+      align-items: center;
+      -ms-flex-align: center;
+      font-size: $font-size-x-small;
+      &:after {
+        content: '\0025';
+        font-size: $font-size-2x-small;
+      }
+    }
+
+    .title {
+      color: $color-primary;
+      font-weight: $text-bold;
+      font-size: $font-size-x-large;
+      margin: 0;
+    }
+
+    .subtitle {
+      color: $color-grey-light;
+      font-weight: $text-bold;
+      font-size: $font-size-regular;
+      margin: 0;
+    }
+
+    .overview {
+      color: $color-grey;
+      font-weight: $text-regular;
+      font-size: $font-size-x-small;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+      height: 150px;
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 1024px) {
+  .card {
+    max-height: 278px;
+
+    .button-text {
+      margin-left: -8px;
+    }
+  }
+}

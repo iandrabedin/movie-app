@@ -1,0 +1,32 @@
+@import "../../../styles/variables.scss";
+
+.profile {
+  margin: 0 16px 16px 0;
+  text-align: center;
+
+  &-image {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    filter: grayscale(100%);
+
+    img {
+      margin-top: -10%;
+      width: 100%;
+    }
+  }
+
+  &-title {
+    color: $color-grey-dark;
+    font-weight: $text-bold;
+    font-size: $font-size-small;
+  }
+
+  &-subtitle {
+    color: $color-grey;
+    font-weight: $text-regular;
+    font-size: $font-size-small;
+  }
+}

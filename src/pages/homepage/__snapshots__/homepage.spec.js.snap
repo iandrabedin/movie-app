@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage should render as expected 1`] = `
+<DocumentFragment>
+  <h1
+    class="main-title"
+  >
+    What movie should I watch?
+  </h1>
+  <form
+    class="form"
+  >
+    <div
+      class="form-input"
+    >
+      <label
+        for="filterTitle"
+      >
+        Title
+      </label>
+      <input
+        id="filterTitle"
+        name="filterTitle"
+        placeholder="Filter by title..."
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="form-input"
+    >
+      <label
+        for="sorting"
+      >
+        Sort by
+      </label>
+      <select
+        id="sorting"
+        name="sorting"
+      >
+        <option
+          disabled=""
+          value="default"
+        >
+          Choose here
+        </option>
+        <option
+          value="title-descending"
+        >
+          Title Descending
+        </option>
+        <option
+          value="title-ascending"
+        >
+          Title Ascending
+        </option>
+        <option
+          value="rating-descending"
+        >
+          Rating Descending
+        </option>
+        <option
+          value="rating-ascending"
+        >
+          Rating Ascending
+        </option>
+      </select>
+    </div>
+  </form>
+  <div
+    class="row"
+  />
+</DocumentFragment>
+`;

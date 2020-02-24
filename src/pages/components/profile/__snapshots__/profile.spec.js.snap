@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile should render as expected 1`] = `
+<DocumentFragment>
+  <div
+    class="col-sm-12 col-lg-3"
+  >
+    <div
+      class="profile"
+    >
+      <div
+        class="profile-image"
+      >
+        <img
+          alt="name"
+          src="https://image.tmdb.org/t/p/w185profile_path"
+        />
+      </div>
+      <div
+        class="profile-title"
+      >
+        name
+      </div>
+      <div
+        class="profile-subtitle"
+      >
+        character
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

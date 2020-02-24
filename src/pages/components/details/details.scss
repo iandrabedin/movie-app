@@ -1,0 +1,46 @@
+@import "../../../styles/variables.scss";
+
+.details-content {
+  .title {
+    color: $color-primary;
+    font-weight: $text-bold;
+    font-size: $font-size-3x-large;
+  }
+
+  .subtitle {
+    color: $color-grey-light;
+    font-weight: $text-bold;
+    font-size: $font-size-3x-large;
+  }
+
+  .section-title {
+    color: $color-grey-dark;
+    font-weight: $text-bold;
+    font-size: $font-size-regular;
+  }
+
+  .overview {
+    color: $color-grey;
+    font-weight: $text-regular;
+    font-size: $font-size-regular;
+  }
+
+  .poster {
+    img {
+      border-radius: 7px;
+      max-width: 100%;
+    }
+  }
+
+  .pills {
+    background-color: $color-primary;
+    color: $color-white;
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: $text-semibold;
+    font-size: $font-size-x-small;
+    margin-right: 4px;
+  }
+}

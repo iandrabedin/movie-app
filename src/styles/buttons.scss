@@ -1,0 +1,28 @@
+@import "./variables.scss";
+
+.button {
+  text-transform: uppercase;
+  color: $color-primary;
+  font-weight: $text-semibold;
+  border-radius: 4px;
+  padding: 0 8px;
+  cursor: pointer;
+  height: 36px;
+  font-size: $font-size-small;
+
+  &-text {
+    border: none;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: rgba($color-primary, 0.1);
+    }
+
+    &:disabled,
+    &.disabled {
+      color: $color-grey-light;
+      background-color: $color-white;
+    }
+  }
+}

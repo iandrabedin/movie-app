@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render as expected 1`] = `
+<DocumentFragment>
+  <div
+    class="col-sm-12 col-lg-6"
+  >
+    <div
+      class="card"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-sm-12 col-lg-4"
+        >
+          <div
+            class="image"
+          />
+        </div>
+        <div
+          class="col-sm-12 col-lg-6 offset-lg-1"
+        >
+          <div
+            class="info"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col-sm-2 col-lg-2"
+              >
+                <div
+                  class="rating"
+                >
+                  88
+                </div>
+              </div>
+              <div
+                class="col-sm-10 col-lg-10"
+              >
+                <h3
+                  class="title"
+                >
+                  movie title
+                </h3>
+                <p
+                  class="subtitle"
+                >
+                  1995
+                </p>
+              </div>
+            </div>
+            <div
+              class="overview"
+            >
+              <p>
+                overview
+              </p>
+            </div>
+            <button
+              class="button button-text"
+            >
+              More info
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
