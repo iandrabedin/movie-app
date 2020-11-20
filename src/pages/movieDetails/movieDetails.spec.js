@@ -7,8 +7,8 @@ afterEach(cleanup);
 jest.mock("react-router-dom", () => ({
   ...jest.requireActual("react-router-dom"),
   useParams: () => ({
-    movieId: 270
-  })
+    movieId: 270,
+  }),
 }));
 
 describe("MovieDetails", () => {

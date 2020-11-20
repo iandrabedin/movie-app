@@ -5,20 +5,17 @@ const url = `${baseURL}/movie/top_rated`;
 
 export const fetchTopRated = () => {
   const configParams = {
-    params: { api_key: process.env.REACT_APP_API_KEY }
+    params: { api_key: process.env.REACT_APP_API_KEY },
   };
 
-  return axios
-    .get(url, configParams)
-    .then(resolve)
-    .catch(handleError);
+  return axios.get(url, configParams).then(resolve).catch(handleError);
 };
 
-const resolve = response => {
+const resolve = (response) => {
   return response.data;
 };
 
-const handleError = error => {
+const handleError = (error) => {
   if (axios.isCancel(error)) {
     return undefined;
   } else {

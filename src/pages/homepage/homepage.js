@@ -5,7 +5,7 @@ import "./homepage.scss";
 
 const Card = lazy(() => import("../components"));
 
-export const Homepage = props => {
+export const Homepage = (props) => {
   const { history } = props;
 
   // States
@@ -15,24 +15,24 @@ export const Homepage = props => {
   const [sortTerm, setSortTerm] = useState("default");
 
   // Callbacks
-  const handleSelectedMovie = movieId => {
+  const handleSelectedMovie = (movieId) => {
     history.push(`/movieDetails/${movieId}`);
   };
 
-  const handleSortingChange = e => {
+  const handleSortingChange = (e) => {
     setSortTerm(e.target.value);
     setResults(moviesList.sort(sorting(e.target.value)));
   };
 
-  const handleSearchChange = e => {
+  const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
   };
 
   // Effects
   useEffect(() => {
-    fetchTopRated().then(result =>
+    fetchTopRated().then((result) =>
       setMoviesList(
-        result.results.map(movie => ({
+        result.results.map((movie) => ({
           ...movie,
           vote_average: movie.vote_average * 10,
           release_date: new Date(movie.release_date).getFullYear(),
@@ -41,14 +41,14 @@ export const Homepage = props => {
               src={`${imageURL}${posterSize.small}${movie.poster_path}`}
               alt={movie.title}
             />
-          )
+          ),
         }))
       )
     );
   }, []);
 
   useEffect(() => {
-    const results = moviesList.filter(d =>
+    const results = moviesList.filter((d) =>
       d.title.toLowerCase().includes(searchTerm.trim())
     );
 
@@ -66,7 +66,7 @@ export const Homepage = props => {
           handleSearchChange={handleSearchChange}
         />
         <div className="row">
-          {results?.map(movie => (
+          {results?.map((movie) => (
             <Card
               key={movie.id}
               id={movie.id}

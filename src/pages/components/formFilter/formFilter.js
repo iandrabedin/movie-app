@@ -1,7 +1,7 @@
 import React from "react";
 import "./formFilter.scss";
 
-export const sorting = sortBy => {
+export const sorting = (sortBy) => {
   switch (sortBy) {
     case "rating-descending":
       return (a, b) => a.vote_average - b.vote_average;
@@ -20,12 +20,12 @@ export const sorting = sortBy => {
   }
 };
 
-const FormFilter = props => {
+const FormFilter = (props) => {
   const {
     searchTerm,
     sortTerm,
     handleSortingChange,
-    handleSearchChange
+    handleSearchChange,
   } = props;
 
   return (

@@ -7,15 +7,15 @@ afterEach(cleanup);
 const props = {
   credits: {
     cast: [{ cast_id: 1, character: "character", name: "name" }],
-    crew: [{ credit_id: 1, job: "job", name: "name" }]
+    crew: [{ credit_id: 1, job: "job", name: "name" }],
   },
   movieDetails: {
     id: 270,
     title: "Title",
     poster_path: "poster_path",
     release_date: "2020-01-01",
-    genres: [{ id: 18, name: "Drama" }]
-  }
+    genres: [{ id: 18, name: "Drama" }],
+  },
 };
 
 describe("Details", () => {

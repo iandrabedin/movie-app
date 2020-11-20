@@ -1,7 +1,7 @@
 import React from "react";
 import "./card.scss";
 
-const Card = props => {
+const Card = (props) => {
   const {
     handleSelectedMovie,
     poster,
@@ -9,7 +9,7 @@ const Card = props => {
     date,
     overview,
     rating,
-    id
+    id,
   } = props;
 
   return (

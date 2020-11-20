@@ -4,23 +4,23 @@ export const baseURL = "https://api.themoviedb.org/3";
 export const imageURL = "https://image.tmdb.org/t/p/";
 export const posterSize = {
   small: "w185",
-  big: "w342"
+  big: "w342",
 };
 
 export const profileSize = {
   small: "w45",
-  big: "w185"
+  big: "w185",
 };
 
 export const instance = axios.create({
-  baseURL: "https://api.themoviedb.org/3"
+  baseURL: "https://api.themoviedb.org/3",
 });
 
 export const RESPONSE_OK = 200;
 export const RESPONSE_CONFLICT = 409;
 export const RESPONSE_INTERNAL_SERVER_ERROR = 500;
 
-export const getErrorMessage = error => {
+export const getErrorMessage = (error) => {
   let errorMessage;
   if (error.response) {
     switch (error.response.status) {

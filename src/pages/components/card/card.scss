@@ -1,4 +1,4 @@
-@import '../../../styles/variables.scss';
+@import "../../../styles/variables.scss";
 
 .card {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -31,7 +31,7 @@
       -ms-flex-align: center;
       font-size: $font-size-x-small;
       &:after {
-        content: '\0025';
+        content: "\0025";
         font-size: $font-size-2x-small;
       }
     }

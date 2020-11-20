@@ -9,8 +9,8 @@ const props = {
     name: "name",
     job: null,
     character: "character",
-    profile_path: "profile_path"
-  }
+    profile_path: "profile_path",
+  },
 };
 
 describe("Profile", () => {

@@ -11,7 +11,7 @@ const props = {
   date: "1995",
   overview: "overview",
   rating: 88,
-  id: 270
+  id: 270,
 };
 
 describe("Card", () => {

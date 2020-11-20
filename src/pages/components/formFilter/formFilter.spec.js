@@ -8,7 +8,7 @@ const props = {
   searchTerm: "title",
   sortTerm: "rating-descending",
   handleSortingChange: jest.fn(),
-  handleSearchChange: jest.fn()
+  handleSearchChange: jest.fn(),
 };
 
 describe("FormFilter", () => {

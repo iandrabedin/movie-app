@@ -13,8 +13,8 @@ export const MovieDetails = () => {
 
   // Effects
   useEffect(() => {
-    fetchDetails(movieId).then(result => setMovieDetails(result));
-    fetchCredits(movieId).then(result => setCredits(result));
+    fetchDetails(movieId).then((result) => setMovieDetails(result));
+    fetchCredits(movieId).then((result) => setCredits(result));
   }, [movieId]);
 
   return (

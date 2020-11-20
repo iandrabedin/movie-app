@@ -4,7 +4,7 @@ import { fetchDetails } from "./fetchDetails";
 jest.mock("axios");
 
 describe("FetchDetails api", () => {
-  it("should fetch successfully data from api", done => {
+  it("should fetch successfully data from api", (done) => {
     // Arrange
     const requestResponse = {
       data: {
@@ -31,25 +31,25 @@ describe("FetchDetails api", () => {
         title: "title",
         video: false,
         vote_average: 8.7,
-        vote_count: 14945
-      }
+        vote_count: 14945,
+      },
     };
 
     axios.get.mockImplementationOnce(() => Promise.resolve(requestResponse));
 
     // Act
-    fetchDetails().then(response => {
+    fetchDetails().then((response) => {
       // Assert
       expect(response).toEqual(requestResponse.data);
       done();
     });
   });
 
-  it("should return an error message when the request is not successful", done => {
+  it("should return an error message when the request is not successful", (done) => {
     axios.get.mockImplementation(() => Promise.reject(new Error()));
 
     // Act
-    fetchDetails().catch(error => {
+    fetchDetails().catch((error) => {
       // Assert
       expect(
         error.message.startsWith("Could not fetch the movie details movies:")

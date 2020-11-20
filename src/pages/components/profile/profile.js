@@ -2,7 +2,7 @@ import React from "react";
 import { imageURL, profileSize } from "../../../api";
 import "./profile.scss";
 
-export const Profile = props => {
+export const Profile = (props) => {
   const { name, character, job, profile_path } = props.profile;
 
   return (

@@ -4,22 +4,22 @@ import "./details.scss";
 
 import { Profile } from "../../components";
 
-const formatDate = release => {
+const formatDate = (release) => {
   const date = new Date(release);
   return date.toLocaleDateString("en-GB", {
     month: "long",
     year: "numeric",
-    day: "numeric"
+    day: "numeric",
   });
 };
 
-const Details = props => {
+const Details = (props) => {
   const {
     title,
     genres,
     poster_path,
     overview,
-    release_date
+    release_date,
   } = props.movieDetails;
   const { cast, crew } = props.credits;
 
@@ -34,18 +34,18 @@ const Details = props => {
           <p className="subtitle">{formatDate(release_date)}</p>
           <div className="row">
             {genres &&
-              genres.map(genre => <div className="pills">{genre.name}</div>)}
+              genres.map((genre) => <div className="pills">{genre.name}</div>)}
           </div>
           <h3 className="section-title">Overview</h3>
           <p className="overview">{overview}</p>
           <h3 className="section-title">Cast and Crew</h3>
           <div className="row">
-            {cast?.slice(0, 4).map(actor => (
+            {cast?.slice(0, 4).map((actor) => (
               <Profile profile={actor} />
             ))}
           </div>
           <div className="row">
-            {crew?.slice(0, 4).map(member => (
+            {crew?.slice(0, 4).map((member) => (
               <Profile profile={member} />
             ))}
           </div>
