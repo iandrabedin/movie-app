@@ -4,9 +4,7 @@
 
 ## About this project
 
-This project was created for Beezy technical test.
-
-You can check the demo [here](https://beezy-app.herokuapp.com/).
+You can check the demo [here](https://movie-app.herokuapp.com/).
 
 ### Installing
 
@@ -15,9 +13,9 @@ If you wish to download the code and run the project locally.
 **Cloning the Repository**
 
 ```
-git clone https://github.com/iandrabedin/beezy.git
+git clone https://github.com/iandrabedin/movie-app.git
 
-cd beezy
+cd movie-app
 ```
 
 **Installing dependencies**
