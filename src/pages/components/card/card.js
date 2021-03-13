@@ -17,7 +17,13 @@ const Card = (props) => {
       <div className="card" key={id}>
         <div className="row">
           <div className="col-sm-12 col-lg-4">
-            <div className="image" onClick={() => handleSelectedMovie(id)}>
+            <div
+              className="image"
+              onClick={() => handleSelectedMovie(id)}
+              onKeyPress={() => handleSelectedMovie(id)}
+              role="button"
+              tabIndex={0}
+            >
               {poster}
             </div>
           </div>

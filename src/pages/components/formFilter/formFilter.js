@@ -48,7 +48,7 @@ const FormFilter = (props) => {
             id="sorting"
             name="sorting"
             value={sortTerm}
-            onChange={handleSortingChange}
+            onBlur={handleSortingChange}
           >
             <option value="default" disabled>
               Choose here
